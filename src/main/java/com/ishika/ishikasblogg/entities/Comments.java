@@ -5,8 +5,6 @@ import java.util.*;
 
 @Entity
 @Data
-@Getter
-@Setter
 public class Comments {
     @Id @GeneratedValue
     private Long id;

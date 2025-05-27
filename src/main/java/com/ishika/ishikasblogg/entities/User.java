@@ -10,8 +10,6 @@ import java.util.*;
 
     @Entity
     @Data
-    @Getter
-    @Setter
     @NoArgsConstructor
     @AllArgsConstructor
     public class User {

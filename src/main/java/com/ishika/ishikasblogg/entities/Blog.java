@@ -6,8 +6,6 @@ import lombok.*;
 
 @Entity
 @Data
-@Getter
-@Setter
 public class Blog {
     @Id @GeneratedValue
     private Long id;
