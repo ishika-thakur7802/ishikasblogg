@@ -1,9 +1,14 @@
 package com.ishika.ishikasblogg.util;
-
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.security.core.userdetails.UserDetails;
+import java.util.function.Function; //understand why
 import org.springframework.stereotype.Component;
+import java.util.*;
 
 @Component
-public class JwtUtil {
+public class JWTutil {
     private final String SECRET_KEY = "secret_ishika_blog_key";
 
     public String extractUsername(String token) {
@@ -33,6 +38,7 @@ public class JwtUtil {
     public String generateToken(UserDetails userDetails) {
         return createToken(new HashMap<>(), userDetails.getUsername());
     }
+
 
     private String createToken(Map<String, Object> claims, String subject) {
         return Jwts.builder()
