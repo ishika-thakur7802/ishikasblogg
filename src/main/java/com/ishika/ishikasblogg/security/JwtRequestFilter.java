@@ -24,6 +24,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     @Autowired
     private JWTutil jwtUtil;
 
+
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
