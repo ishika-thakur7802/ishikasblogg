@@ -5,7 +5,10 @@ import lombok.*;
 
 
 @Entity
-@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class Blog {
     @Id @GeneratedValue
     private Long id;
@@ -14,9 +17,9 @@ public class Blog {
     @Column(columnDefinition = "TEXT")
     private String content;
     private String imageUrl;
-
-    @ManyToOne
-    private User author;
+//
+//    @ManyToOne
+//    private User author;
 
     private int likes;
 }
