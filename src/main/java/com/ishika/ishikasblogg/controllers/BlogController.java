@@ -34,5 +34,11 @@ public class BlogController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Blog> deleteBlogById(@PathVariable Long id){
+        blogService.deleteBlogById(id);
+        return ResponseEntity.ok().build();
+    }
 }
 

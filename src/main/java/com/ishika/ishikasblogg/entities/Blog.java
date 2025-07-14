@@ -5,7 +5,6 @@ import lombok.*;
 
 
 @Entity
-@ToString
 
 public class Blog {
     @Id @GeneratedValue
@@ -51,7 +50,7 @@ public class Blog {
         return likes;
     }
 
-    public void setId(long id)
+    public void setId(Long id)
     {
         this.id= id;
     }

@@ -27,5 +27,9 @@ public class BlogService {
     public Optional<Blog> getBlogById(Long id) {
         return blogRepository.findById(id);
     }
+
+    public void deleteBlogById(Long id) {
+        blogRepository.deleteById(id);
+    }
 }
 
