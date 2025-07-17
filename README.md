@@ -1,4 +1,4 @@
-# ✍️ ishikasblogg
+# ✍️ Build & Break
 
 A personal blogging platform built with **Spring Boot** and **React**, designed with simplicity and aesthetics in mind. It supports content creation, reading, and theme switching — with plans for robust role-based access, JWT authentication, and more.
 
